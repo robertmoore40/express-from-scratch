@@ -16,3 +16,6 @@ function Layer(path, options, fn) {
 Layer.prototype.match = function match(path) {
     return this.route.path === path;
 };
+
+Layer.prototype.handle_request = function handle(req,res,next) {
+    var fn = this.handle;

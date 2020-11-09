@@ -24,3 +24,7 @@ app.set = function set(setting,val) {
         case 'etag':
             this.set('etag fn',"")
             break;
+
+            case 'query parser':
+            this.set('query parser fn',"")
+            break

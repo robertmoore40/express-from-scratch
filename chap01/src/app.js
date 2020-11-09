@@ -7,3 +7,11 @@ var http = require('http');
 
 
 var app = exports = module.exports = {};
+
+app.init = function() {
+    this.cache = {};
+    this.engines = {};
+    this.settings = {}
+
+    this._router = undefined;
+};

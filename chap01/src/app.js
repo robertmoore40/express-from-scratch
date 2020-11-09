@@ -32,3 +32,7 @@ app.set = function set(setting,val) {
             case 'trust proxy':
                 this.set('trust proxy fn',"");
                 break;
+            }
+
+            return this;
+        };

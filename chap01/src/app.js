@@ -18,3 +18,9 @@ app.init = function() {
 
 app.set = function set(setting,val) {
     this.settings[setting] = val;
+
+    
+    switch (setting) {
+        case 'etag':
+            this.set('etag fn',"")
+            break;

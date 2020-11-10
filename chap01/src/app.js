@@ -59,3 +59,8 @@ app.set = function set(setting,val) {
         
             router.handle(req, res);
         };
+
+        
+methods.forEach(function (method){
+    app[method] = function(path) {
+        this.lazyrouter()

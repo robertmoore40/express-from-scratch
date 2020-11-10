@@ -11,3 +11,7 @@ function Route(path) {
 
     this.methods = {}
 }
+
+Route.prototype.dispatch = function dispatch(req,res,done) {
+
+};

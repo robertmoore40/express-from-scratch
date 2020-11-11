@@ -19,3 +19,6 @@ Route.prototype.dispatch = function dispatch(req,res,done) {
 methods.forEach(function(method){
     Route.prototype[method] = function(){
         var handles = flatten(Array.prototype.slice.call(arguments));
+
+        for (var i = 0; i < handles.length; i++) {
+            var handle = handles[i];

@@ -17,3 +17,6 @@ var proto = module.exports = function(options) {
 
     router.caseSensitive = opts.caseSensitive;
     router.mergeParams = opts.mergeParams;
+
+    router.strict = opts.strict;
+    router.stack = [];

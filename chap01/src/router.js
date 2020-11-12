@@ -39,3 +39,7 @@ proto.route = function route(path) {
 proto.handle = function handle(req, res, out) {
     var self = this;
     var stack = self.stack;
+    var layer = stack[0];
+    var route = layer.route;
+    route.stack[0].handle_request(req, res);
+}

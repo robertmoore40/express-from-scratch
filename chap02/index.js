@@ -12,3 +12,9 @@ app.get('/2', (req, res) => {
     res.write('Hello express app from /2');
     res.end();
 });
+
+app.post('/post',(req,res) => {
+    res.writeHead(200)
+    res.write('Post data :)');
+    res.end();
+})

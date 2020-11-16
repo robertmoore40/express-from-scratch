@@ -18,3 +18,5 @@ app.post('/post',(req,res) => {
     res.write('Post data :)');
     res.end();
 })
+
+app.listen(3000, () => console.log('Port 3000 open and listening'))

@@ -6,3 +6,5 @@ var Layer = require('./Layer')
 
 var slice = Array.prototype.slice;
 var http = require('http');
+
+var app = exports = module.exports = {};

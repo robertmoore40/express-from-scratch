@@ -32,3 +32,5 @@ app.set = function set(setting,val) {
             this.set('trust proxy fn',"");
             break;
     }
+    return this;
+};

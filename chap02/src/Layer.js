@@ -10,3 +10,7 @@ function Layer(path, options, fn) {
     this.params = undefined;
     this.path = undefined;
 }
+
+Layer.prototype.match = function match(path) {
+    return this.route.path === path;
+};

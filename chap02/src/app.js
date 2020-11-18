@@ -39,3 +39,9 @@ app.set = function set(setting,val) {
 app.enabled = function enabled(setting) {
     return Boolean(this.set(setting));
 };
+
+app.lazyrouter = function lazyrouter() {
+    if(!this._router) {
+        this._router = new Router({})
+    }
+};

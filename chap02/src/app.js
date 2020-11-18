@@ -57,3 +57,6 @@ app.handle = function handle(req, res, callback) {
     
     router.handle(req, res);
 };
+
+methods.forEach(function (method){
+    app[method] = function(path) {

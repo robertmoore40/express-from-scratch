@@ -64,3 +64,6 @@ proto.handle = function handle(req, res, out) {
         if (!route) {
             continue;
         }
+        route.stack[0].handle_request(req, res);
+    }
+}

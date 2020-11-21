@@ -22,3 +22,6 @@ var proto = module.exports = function(options) {
 
     router.strict = opts.strict;
     router.stack = [];
+
+    return router;
+};

@@ -67,3 +67,6 @@ proto.handle = function handle(req, res, out) {
         route.stack[0].handle_request(req, res);
     }
 }
+
+function getPathname(req) {
+    try {

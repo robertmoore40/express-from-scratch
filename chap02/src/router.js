@@ -41,3 +41,6 @@ proto.route = function route(path) {
 
 proto.handle = function handle(req, res, out) {
     var self = this;
+
+    var stack = self.stack;
+    var path = getPathname(req);

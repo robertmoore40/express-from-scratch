@@ -25,3 +25,7 @@ var proto = module.exports = function(options) {
 
     return router;
 };
+
+
+proto.route = function route(path) {
+    var route = new Route(path)

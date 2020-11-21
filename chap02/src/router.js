@@ -44,3 +44,6 @@ proto.handle = function handle(req, res, out) {
 
     var stack = self.stack;
     var path = getPathname(req);
+
+     var layer;
+     var match;

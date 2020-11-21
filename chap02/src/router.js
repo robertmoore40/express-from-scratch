@@ -75,3 +75,6 @@ function getPathname(req) {
         return undefined;
     }
 }
+
+function matchLayer(layer, path) {
+    try {

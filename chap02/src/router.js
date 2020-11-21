@@ -55,3 +55,8 @@ proto.handle = function handle(req, res, out) {
         layer = stack[idx++];
         match = matchLayer(layer,path)
         route = layer.route;
+
+        
+        if (match !== true) {
+            continue;
+        }

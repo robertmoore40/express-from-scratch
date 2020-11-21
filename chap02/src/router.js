@@ -47,3 +47,6 @@ proto.handle = function handle(req, res, out) {
 
      var layer;
      var match;
+
+     var route;
+     var idx = 0

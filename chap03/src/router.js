@@ -12,3 +12,7 @@ var proto = module.exports = function(options) {
     }
 
     setPrototypeOf(router, proto)
+
+    router.params = {};
+    router._params = [];
+    router.caseSensitive = opts.caseSensitive;

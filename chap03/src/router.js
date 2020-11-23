@@ -30,3 +30,8 @@ proto.route = function route(path) {
     var layer = new Layer(path,{},route.dispatch.bind(route))
 
     layer.route = route;
+
+    this.stack.push(layer);
+
+    return route;
+};

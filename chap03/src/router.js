@@ -78,3 +78,8 @@ function getPathname(req) {
         return undefined;
     }
 }
+
+function matchLayer(layer, path) {
+    try {
+        return layer.match(path);
+    } catch (err) {

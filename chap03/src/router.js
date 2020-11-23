@@ -45,3 +45,6 @@ proto.handle = function handle(req, res, out) {
     next();
 
     function next() {
+
+        var path = getPathname(req);
+        var layer;

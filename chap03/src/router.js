@@ -65,3 +65,7 @@ proto.handle = function handle(req, res, out) {
                 // process non-route handlers normally
                 continue;
             }
+            route.stack[0].handle_request(req, res, next);
+        }
+    }
+}

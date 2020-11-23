@@ -10,3 +10,5 @@ var proto = module.exports = function(options) {
     function router(req,res,next) {
         router.handle(req,res,next)
     }
+
+    setPrototypeOf(router, proto)

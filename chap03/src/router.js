@@ -6,3 +6,7 @@ var parseUrl = require('parseurl');
 
 var proto = module.exports = function(options) {
     var opts = options || {}
+
+    function router(req,res,next) {
+        router.handle(req,res,next)
+    }

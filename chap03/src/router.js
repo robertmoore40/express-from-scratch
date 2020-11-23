@@ -48,3 +48,6 @@ proto.handle = function handle(req, res, out) {
 
         var path = getPathname(req);
         var layer;
+
+        var match;
+        var route;

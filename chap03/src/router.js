@@ -60,3 +60,8 @@ proto.handle = function handle(req, res, out) {
             if (match !== true) {
                 continue;
             }
+
+            if (!route) {
+                // process non-route handlers normally
+                continue;
+            }

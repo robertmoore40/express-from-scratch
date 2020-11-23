@@ -69,3 +69,7 @@ proto.handle = function handle(req, res, out) {
         }
     }
 }
+
+function getPathname(req) {
+    try {
+        return parseUrl(req).pathname;

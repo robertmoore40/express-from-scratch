@@ -43,3 +43,7 @@ app.set = function set(setting,val) {
 
     app.lazyrouter = function lazyrouter() {
         if(!this._router) {
+            this._router = new Router({})
+        }
+        this._router.use(middleware.init(this))
+    };

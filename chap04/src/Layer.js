@@ -12,3 +12,6 @@ function Layer(path, options, fn) {
     this.params = undefined;
     this.path = undefined;
 }
+
+Layer.prototype.match = function match(path) {
+    if(this.route && this.route.path === path)

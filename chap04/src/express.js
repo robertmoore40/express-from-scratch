@@ -10,3 +10,6 @@ function createApplication() {
     };
 
     mixin(app,proto,false);
+
+    var req = Object.create(http.IncomingMessage.prototype);
+    var res = Object.create(http.ServerResponse.prototype)

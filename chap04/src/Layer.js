@@ -28,3 +28,6 @@ Layer.prototype.handle_request = function handle(req,res,next) {
     try {
         fn(req, res, next);
     } catch (err) {
+        console.error(err)
+    }
+}

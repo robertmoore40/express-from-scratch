@@ -8,3 +8,7 @@ app.get('/', (req, res,next) => {
 
 app.get('/', (req, res) => {
     res.writeHead(200)
+    res.write('Response from second matching route');
+    res.send("hello world")
+    res.end();
+});

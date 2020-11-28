@@ -13,3 +13,7 @@ function createApplication() {
 
     var req = Object.create(http.IncomingMessage.prototype);
     var res = Object.create(http.ServerResponse.prototype)
+
+    res.send = function (body) {
+        console.log("wow,", body)
+    }

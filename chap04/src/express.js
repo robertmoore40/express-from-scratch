@@ -23,3 +23,9 @@ function createApplication() {
             configurable: true, enumerable: true, writable: true, value: app
         }
     });
+
+    app.response = Object.create(res,{
+        app : {
+            configurable: true, enumerable: true, writable: true, value: app
+        }
+    });

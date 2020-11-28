@@ -33,3 +33,4 @@ function createApplication() {
     app.init();
     return app;
 }
+exports.application = proto;

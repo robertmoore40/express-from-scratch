@@ -14,3 +14,7 @@ function Route(path) {
 Route.prototype.dispatch = function dispatch(req,res,done) {
 
 };
+
+
+methods.forEach(function(method){
+    Route.prototype[method] = function(){

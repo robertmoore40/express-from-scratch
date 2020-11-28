@@ -22,3 +22,4 @@ methods.forEach(function(method){
         var handles = flatten(Array.prototype.slice.call(arguments));
 
         for (var i = 0; i < handles.length; i++) {
+            var handle = handles[i];

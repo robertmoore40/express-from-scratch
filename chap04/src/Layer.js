@@ -22,3 +22,6 @@ Layer.prototype.match = function match(path) {
 
     return false;
 };
+
+Layer.prototype.handle_request = function handle(req,res,next) {
+    var fn = this.handle;

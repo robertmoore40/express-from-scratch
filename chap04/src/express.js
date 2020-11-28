@@ -17,3 +17,9 @@ function createApplication() {
     res.send = function (body) {
         console.log("wow,", body)
     }
+
+    app.request = Object.create(req,{
+        app : {
+            configurable: true, enumerable: true, writable: true, value: app
+        }
+    });

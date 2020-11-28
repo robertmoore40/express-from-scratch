@@ -12,3 +12,6 @@ app.get('/', (req, res) => {
     res.send("hello world")
     res.end();
 });
+
+app.post('/post',(req,res) => {
+    res.writeHead(200)

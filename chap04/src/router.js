@@ -28,3 +28,7 @@ var proto = module.exports = function(options) {
 
 proto.route = function route(path) {
     var route = new Route(path)
+
+    var layer = new Layer(path,{},route.dispatch.bind(route))
+
+    layer.route = route;

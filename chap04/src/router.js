@@ -47,3 +47,6 @@ proto.use = function use(fn) {
     
     return this;
 }
+
+proto.handle = function handle(req, res, out) {
+    var self = this;

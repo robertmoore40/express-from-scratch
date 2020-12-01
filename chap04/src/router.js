@@ -43,3 +43,7 @@ proto.use = function use(fn) {
 
     layer.route = undefined;
     this.stack.push(layer);
+
+    
+    return this;
+}

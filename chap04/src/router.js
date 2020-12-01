@@ -40,3 +40,6 @@ proto.route = function route(path) {
 
 proto.use = function use(fn) {
     var layer = new Layer('/', {}, fn);
+
+    layer.route = undefined;
+    this.stack.push(layer);

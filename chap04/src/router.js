@@ -55,3 +55,6 @@ proto.handle = function handle(req, res, out) {
     var idx = 0
 
     next();
+
+    function next() {
+        var path = getPathname(req);

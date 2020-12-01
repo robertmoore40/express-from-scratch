@@ -50,3 +50,6 @@ proto.use = function use(fn) {
 
 proto.handle = function handle(req, res, out) {
     var self = this;
+
+    var stack = self.stack;
+    var idx = 0

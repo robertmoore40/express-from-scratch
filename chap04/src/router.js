@@ -37,3 +37,6 @@ proto.route = function route(path) {
 
     return route;
 };
+
+proto.use = function use(fn) {
+    var layer = new Layer('/', {}, fn);

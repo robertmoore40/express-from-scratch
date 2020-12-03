@@ -45,3 +45,6 @@ function createApplication() {
             configurable: true, enumerable: true, writable: true, value: app
         }
     });
+    app.init();
+    return app;
+}

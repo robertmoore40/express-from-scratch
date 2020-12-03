@@ -25,3 +25,11 @@ Layer.prototype.match = function match(path) {
 
 Layer.prototype.handle_request = function handle(req,res,next) {
     var fn = this.handle;
+
+    
+    try {
+        fn(req, res, next);
+    } catch (err) {
+        console.error(err)
+    }
+}

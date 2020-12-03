@@ -19,3 +19,6 @@ Layer.prototype.match = function match(path) {
     else if(this.name === "expressInit") {
         return true;
     }
+
+    return false;
+};

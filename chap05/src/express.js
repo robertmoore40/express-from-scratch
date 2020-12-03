@@ -25,3 +25,5 @@ function createApplication() {
             this.setHeader('Content-Type', 'text/plain');
             this.end(body,'utf8');
         }
+        return this;
+    }

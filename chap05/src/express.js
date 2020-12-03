@@ -20,3 +20,8 @@ function createApplication() {
         if(typeof body === 'object') {
             this.json(body)
         }
+
+        else if(typeof body === 'string') {
+            this.setHeader('Content-Type', 'text/plain');
+            this.end(body,'utf8');
+        }

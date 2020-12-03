@@ -27,3 +27,9 @@ function createApplication() {
         }
         return this;
     }
+
+    
+    res.json = function (body) {
+        this.setHeader('Content-Type', 'application/json');
+        return this.send(JSON.stringify(body))
+    }

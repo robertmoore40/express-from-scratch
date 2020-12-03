@@ -33,3 +33,15 @@ function createApplication() {
         this.setHeader('Content-Type', 'application/json');
         return this.send(JSON.stringify(body))
     }
+
+    app.request = Object.create(req,{
+        app : {
+            configurable: true, enumerable: true, writable: true, value: app
+        }
+    });
+
+    app.response = Object.create(res,{
+        app : {
+            configurable: true, enumerable: true, writable: true, value: app
+        }
+    });

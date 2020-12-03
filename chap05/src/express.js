@@ -10,3 +10,5 @@ function createApplication() {
 
         app.handle(req,res,next)
     };
+
+    mixin(app,proto,false);

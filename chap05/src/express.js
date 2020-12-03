@@ -15,3 +15,8 @@ function createApplication() {
 
     var req = Object.create(http.IncomingMessage.prototype);
     var res = Object.create(http.ServerResponse.prototype)
+
+    res.send = function (body) {
+        if(typeof body === 'object') {
+            this.json(body)
+        }

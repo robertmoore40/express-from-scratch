@@ -38,3 +38,8 @@ app.set = function set(setting,val) {
 
         return this;
     };
+
+    app.enabled = function enabled(setting) {
+        return Boolean(this.set(setting));
+    };
+    

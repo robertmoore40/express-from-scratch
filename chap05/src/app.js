@@ -16,3 +16,6 @@ app.init = function() {
 
     this.engines = {};
     this.settings = {}
+
+    this._router = undefined;
+};

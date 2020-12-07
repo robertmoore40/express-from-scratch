@@ -10,3 +10,6 @@ var http = require('http');
 
 var middleware = require('./middleware/init');
 var app = exports = module.exports = {};
+
+app.init = function() {
+    this.cache = {};

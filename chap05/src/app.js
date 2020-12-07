@@ -19,3 +19,6 @@ app.init = function() {
 
     this._router = undefined;
 };
+
+app.set = function set(setting,val) {
+    this.settings[setting] = val;

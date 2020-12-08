@@ -11,3 +11,7 @@ app.get('/', (req, res,next) => {
     console.log("bar")
     next()
 });
+
+app.get('/', (req, res) => {
+    res.json({hello: 'world'})
+});

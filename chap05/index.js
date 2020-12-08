@@ -15,3 +15,6 @@ app.get('/', (req, res,next) => {
 app.get('/', (req, res) => {
     res.json({hello: 'world'})
 });
+
+app.post('/post',(req,res) => {
+    res.writeHead(200)

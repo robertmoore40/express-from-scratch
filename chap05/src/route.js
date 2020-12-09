@@ -8,3 +8,6 @@ var Layer = require('./Layer')
 function Route(path) {
     this.path = path;
     this.stack = [];
+
+    this.methods = {}
+}

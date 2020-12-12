@@ -28,3 +28,7 @@ methods.forEach(function(method){
                 var msg = 'Route.' + method + '() requires a callback function but got a ' + type
                 throw new Error(msg);
             }
+
+            
+            var layer = Layer('/', {}, handle);
+            layer.method = method;

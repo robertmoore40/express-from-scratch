@@ -32,3 +32,6 @@ methods.forEach(function(method){
             
             var layer = Layer('/', {}, handle);
             layer.method = method;
+            this.methods[method] = true;
+            this.stack.push(layer);
+        }

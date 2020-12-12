@@ -35,3 +35,7 @@ methods.forEach(function(method){
             this.methods[method] = true;
             this.stack.push(layer);
         }
+
+        return this;
+    };
+});

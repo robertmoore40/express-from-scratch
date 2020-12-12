@@ -22,3 +22,6 @@ methods.forEach(function(method){
 
         for (var i = 0; i < handles.length; i++) {
             var handle = handles[i];
+
+            if (typeof handle !== 'function') {
+                var type = toString.call(handle);

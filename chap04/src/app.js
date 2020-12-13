@@ -60,3 +60,7 @@ app.set = function set(setting,val) {
 
     methods.forEach(function (method){
         app[method] = function(path) {
+
+            this.lazyrouter()
+
+            var route = this._router.route(path);

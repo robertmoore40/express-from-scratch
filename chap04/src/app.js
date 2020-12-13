@@ -64,3 +64,6 @@ app.set = function set(setting,val) {
             this.lazyrouter()
 
             var route = this._router.route(path);
+
+            route[method].apply(route, slice.call(arguments, 1));
+            return this;

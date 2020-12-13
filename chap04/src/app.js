@@ -52,3 +52,6 @@ app.set = function set(setting,val) {
         var server = http.createServer(this);
         return server.listen.apply(server, arguments);
     };
+
+    app.handle = function handle(req, res, callback) {
+        var router = this._router;

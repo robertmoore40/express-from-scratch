@@ -67,3 +67,6 @@ app.set = function set(setting,val) {
 
             route[method].apply(route, slice.call(arguments, 1));
             return this;
+
+        }
+    });

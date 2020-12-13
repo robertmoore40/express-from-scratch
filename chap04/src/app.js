@@ -55,3 +55,5 @@ app.set = function set(setting,val) {
 
     app.handle = function handle(req, res, callback) {
         var router = this._router;
+        router.handle(req, res);
+    };

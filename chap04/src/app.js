@@ -47,3 +47,6 @@ app.set = function set(setting,val) {
         }
         this._router.use(middleware.init(this))
     };
+
+    app.listen = function listen() {
+        var server = http.createServer(this);

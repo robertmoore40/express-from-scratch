@@ -11,3 +11,6 @@ app.get('/', (req, res) => {
     res.write('Response from second matching route');
     res.end();
 });
+
+app.post('/post',(req,res) => {
+    res.writeHead(200)
